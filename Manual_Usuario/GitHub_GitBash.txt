@@ -1,0 +1,27 @@
+Usaremos GitHub para nuestro desarrollo de nuestro proyecto
+link GitHub: https://github.com/
+
+Manual de usuario para aprender a usar GitHub
+Nomenclatura:
+disco c --> cd /c
+carpeta mirepositorio que esta en c  -->cd  /c/mirepositorio
+carpeta d:Proyecto_SIC --> cd /d/Proyecto_SIC/
+
+
+
+Comandos
+clear --> Limpiar pantalla
+git init --> Inicializar la carpeta de tu proyecto
+si quieres deshacer tus versiones y no utilizar versiones ---> Borrar carpeta .git 
+git config --list --> Nos sirve para configurar GitHub
+git config --global user.name "Nombre del Usuario " ---> Agregar tu nombre
+git config --global user.email juandanielquispeperedo@gmail.com  --> Agregar tu correo electronico
+dir --> Muestra las carpetas de tu repositorio
+ls -l --> Lista en forma ordenada las carpetas de tu proyecto
+git status --> Ver el estado de tus carpetas si existe modificaciones
+git add home.txt --> Pasar al area de almacenamiento
+git rm --cached nombre.txt --> Sacar del area de almacenamiento
+
+
+
+
