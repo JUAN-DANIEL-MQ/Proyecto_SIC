@@ -1,3 +1,5 @@
+************************ TRABAJANDO CON GIT REPOSITORIO LOCAL **************************************
+
 Usaremos GitHub para nuestro desarrollo de nuestro proyecto
 link GitHub: https://github.com/
 
@@ -9,7 +11,7 @@ carpeta d:Proyecto_SIC --> cd /d/Proyecto_SIC/
 
 
 
-Comandos
+-----------------------------   Comandos basicos de git    -----------------------------------
 clear --> Limpiar pantalla
 git init --> Inicializar la carpeta de tu proyecto
 si quieres deshacer tus versiones y no utilizar versiones ---> Borrar carpeta .git 
@@ -21,6 +23,103 @@ ls -l --> Lista en forma ordenada las carpetas de tu proyecto
 git status --> Ver el estado de tus carpetas si existe modificaciones
 git add home.txt --> Pasar al area de almacenamiento
 git rm --cached nombre.txt --> Sacar del area de almacenamiento
+git commit -m "Nombre de la version de tu proyecto" ---> Crear versiones de tu carpeta
+git log --> Historial de tus versiones en varias lineas usuario y email
+git log --oneline --> lista tus versiones en orden en una sola linea
+ 
+
+
+----------------------------------   Ramas o Branch -------------------------------------
+
+Rama Master: La rama master estan las versiones finales y este es el proyecto principal 
+
+Crear Ramas -->> Se crea ramas para hacer pruebas y modificar las funcionalidades los archivos que existen actualmente
+y todo lo que modifiquemos en esta rama no altera la rama master ni sus variados archivos que existen en ellos.
+
+Comando para crear ramas:
+
+git branch desarrollo --> Creando la rama desarrollo
+desarrollo = este nombre puede ser cualquiera
+git checkout desarrollo --> Cambiando a la rama desarrollo 
+desarrollo = este nombre puede ser cualquiera
+
+
+--------------------------- Fucion de Ramas o Branch -----------------------------------
+git checkout master  ---> lugar desde desde donde queremos fucionar la rama secundaria
+git merge desarrollo ---> añadiendo la rama desarrollo a la rama master 
+git dif master desarrollo --> Diferencia entre las ramas 
+master = puede ser cualquier rama 
+desarrollo = puede ser cualquier rama 
+git branch --> Ver ramas 
+git branch -d desarrollo --> Eliminar la rama desarrollo 
+
+
+-------------------------- Volviendo a versiones anteriores --------------------------
+!! Primer paso listar todas tus versiones para volver en un punto 
+git log --oneline --> Listar versiones de mi proyecto 
+8be4afb (HEAD -> master) Version 1.1 Creacion formato Word del informe del proyecto SIC
+60350a2 Version 1.0 Creacion del area de trabajo carpetas
+
+Segundo paso es reset con el codigo inicial de las versiones ejemplo: 60350a2
+git reset --soft 60350a2 ---> Volver a una version antigua del proyecto creado o moverse de una version a otra 
+
+.gitignore --> para no hacer seguimientos 
+mkdir librerias --> Crear carpeta librerias 
+cd librerias/ -->> Ingresando a librerias 
+touch framework.txt -->> Crear archivos txt
+touch readme.txt -->> Crear archivos txt
+vim framework.txt --> Ingreasar texto a las framerwork txt 
+:wq  -->> Guardar estos documentos ditados
+
+Para que no contemple esta carpeta de links
+vim .gitignore --> Crear carpeta de gitignore
+especificar lo que no se hace seguimiento
+!!.gitignore   
+librerias/*  --  >  esc --> :wq --> enter ¡¡
+
+
+************************ TRABAJANDO CON GITHUB REPOSITORIO REMOTO **************************************
+Crearse cuenta llenando formulario en github
+--> Para crear repositorio remoto tiene que tener el mismo nombre del repositorio local 
+
+Copiar el enlace de la conexion en la pagina
+--> git remote add origin "enlace del reepositorio remoto ...... " 
+--> git remote -v --> verificar si esta enlazado 
+--> git remote remove origin --> eliminar el alias origin 
+--> git push origin master 
+master = la rama que queremos subir 
+ !! enlazar con repositorio local  ¡¡
+--> git remote add origin "enlace del reepositorio remoto ...... " 
+--> git push origin master --> Subir del repositorio !!!! local ¡¡¡¡¡ al repositorio remoto
+actualizar la pagina para ver archivos en el gitHub para confirmar que se subio
+ver el readme para introducir los participantes.
+--> git pull origin master --> Actualizar nuestro repositorio local del !!!  remoto ¡¡¡¡
+--> vim readme.txt -->Ver el documento txt
+
+******************** Desacargar proyectos de GitHub ****************************
+--> Entrar al directorio en el que desea descargar el proyecto
+--> cd /d --> Ingresando al disco 
+--> git clone "link del repositorio " ---> Clonar a tu disco o carpeta deseada
+--> cd .. ->> Salir de la carpeta actual 
+
+********************* Proceso FORK copia a nivel GitHub **********************************
+1) -- Para que puedan contribuir entrar modo fork a la cuenta github --
+2) -- Ingresar desde otro usuario 
+3) -- buscar el link del repositorio o link de mi usuario 
+4) -- Pulsar fork y se hara copia en tu repositorio remoto (nube)
+5) -- Luego puedes editar el proyecto pero aun no se edita el proyecto del dueño 
+6) -- Ir a la opcion pull request
+7) -- Crear nuevo pull
+8) -- El dueño del proyecto vera si se actualiza el proyecto o no
+
+
+
+
+
+
+
+
+
 
 
 
