@@ -110,7 +110,7 @@ ver el readme para introducir los participantes.
 5) -- Luego puedes editar el proyecto pero aun no se edita el proyecto del dueño 
 6) -- Ir a la opcion pull request
 7) -- Crear nuevo pull
-8) -- El dueño del proyecto vera si se actualiza el proyecto o no
+8) -- El dueño del proyecto vera si se actualiza el proyecto o este no se actualiza
 
 
 
