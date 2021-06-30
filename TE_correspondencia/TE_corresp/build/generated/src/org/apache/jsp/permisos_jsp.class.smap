@@ -1,0 +1,17 @@
+SMAP
+permisos_jsp.java
+JSP
+*S JSP
+*F
++ 0 permisos.jsp
+permisos.jsp
+*L
+1,17:54
+18:71,2
+20,12:73
+31:114,11
+32:125
+33,5:126,3
+38,2:141
+39,10:87
+*E
